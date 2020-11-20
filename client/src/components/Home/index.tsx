@@ -52,11 +52,11 @@ class Home extends Component<Props, {content: any}> {
     const job_count = jobs.reduce((count: number, job: any) => count + job.total_jobs_in_hospital, 0)
     return (
       <>
-        <div className="root">
+        <div className="root p-3 bg-white">
           <div className="d-none d-sm-block">
-            <div className="search-container ">
-              <FaSearch className="search-icon" color="gray" />
-              <input type="text" className="search-bar" placeholder="Search for any job, title, keywords or company"/>
+            <div className="search-container border border-gray-50 bg-white mt-3 p-3">
+              <FaSearch className="mt-1" color="gray" />
+              <input type="text" className="search-bar ml-2 w-100" placeholder="Search for any job, title, keywords or company"/>
             </div>
           </div>
           <div className="row">
@@ -66,9 +66,9 @@ class Home extends Component<Props, {content: any}> {
               }
             </div>
             <div className="col-md-9">
-              <div className="container">
-                <div className="join-count-container">
-                  <span className="job-count">{job_count}</span>
+              <div className="border border-gray-50 bg-white mt-3 p-3">
+                <div className="mt-4 mb-3">
+                  <span className="font-bold">{job_count}</span>
                   <span> job postings</span>
                 </div>
                 {
