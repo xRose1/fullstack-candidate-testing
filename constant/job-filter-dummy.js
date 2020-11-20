@@ -1,4 +1,4 @@
-{
+export default {
   "job_type": [
     {
       "key": "Per-Diem",
