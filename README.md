@@ -5,12 +5,17 @@
 1.  Start Backend
 
     cd backend
+
     npm install
+
     npm start
 
 2.  Start Frontend
+
     cd client
+
     npm install
+
     npm start
 
 ## Instructions
