@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import './styles.css';
 
 class Footer extends Component {
@@ -17,16 +15,16 @@ class Footer extends Component {
           </div>
           <div className="col-md-3">
             <h4 className="footer-title">Sitemap</h4>
-            <a href="#" className="footer-item">Nurses</a>
-            <a href="#" className="footer-item">Employers</a>
-            <a href="#" className="footer-item">Social networking</a>
-            <a href="#" className="footer-item">Jobs</a>
+            <a href="/#" className="footer-item">Nurses</a>
+            <a href="/#" className="footer-item">Employers</a>
+            <a href="/#" className="footer-item">Social networking</a>
+            <a href="/#" className="footer-item">Jobs</a>
           </div>
           <div className="col-md-3">
             <h4 className="footer-title">Privacy</h4>
-            <a href="#" className="footer-item">Terms of use</a>
-            <a href="#" className="footer-item">Privacy policy</a>
-            <a href="#" className="footer-item">Cookie policy</a>
+            <a href="/#" className="footer-item">Terms of use</a>
+            <a href="/#" className="footer-item">Privacy policy</a>
+            <a href="/#" className="footer-item">Cookie policy</a>
           </div>
         </div>
       </footer>

@@ -1,10 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {Modal} from 'react-bootstrap';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import NotFound from './components/NotFound';
 import store from './store';
 import "tailwindcss/tailwind.css"
 
