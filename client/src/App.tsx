@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 import store from './store';
+import "tailwindcss/tailwind.css"
 
 const Home = lazy(() => import('./components/Home'));
 

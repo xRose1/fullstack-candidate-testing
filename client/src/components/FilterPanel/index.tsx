@@ -10,7 +10,7 @@ class FilterPanel extends Component<{data: [], title: string, onShowMore: any}> 
     const {data, title, onShowMore} = this.props;
     return (
       <div>
-        <div className="container">
+        <div className="border border-gray-50 bg-white mt-3 p-3">
           <h6 className="filter-type-title">{title}</h6>
           {
             data.slice(0, 10).map((item: Filter) => <FilterItem data={item} key={item.key} />)
