@@ -1,0 +1,18 @@
+.footer {
+  padding: 32px;
+}
+.footer-container {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-item {
+  font-size: 14px;
+  color: #212828;
+  display: block;
+}
