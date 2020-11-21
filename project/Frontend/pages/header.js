@@ -2,10 +2,10 @@ const header = () => {
   return (
     <div>
       <div className="p-4 shadow rounded bg-white flex">
-        <div class="block lg:hidden mt-1">
-          <button class="tailwind-burger flex items-center px-3 py-2 border rounded text-blue-700 border-blue-700">
+        <div className="block lg:hidden mt-1">
+          <button className="tailwind-burger flex items-center px-3 py-2 border rounded text-blue-700 border-blue-700">
             <svg
-              class="fill-current h-3 w-3"
+            className="fill-current h-3 w-3"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
