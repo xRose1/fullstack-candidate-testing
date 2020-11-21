@@ -47,7 +47,7 @@ const jobComponent = () => {
             <div className="circle w-1/2 bg-gray-500 text-white rounded bg-white flex items-center justify-center">
               {((data.name).slice(0,2)).toUpperCase()}
             </div>
-            <div className="w-1/2 ml-5 pt-2">
+            <div className="lg:w-1/2 ml-5 pt-2">
               {data.total_jobs_in_hospital} for {data.name}
             </div>
           </li>
@@ -61,10 +61,10 @@ const jobComponent = () => {
   return (
     <div>
       <div className="flex p-1 pt-5">
-        <div className="mr-40 w-1/4">7,753 job postings</div>
-        <div className="flex">
-          <div className="text-gray-400 ml-5 mr-5">Sort by</div>
+        <div className="lg:mr-40 lg:w-1/4">7,753 job postings</div>
+        <div className="flex hidden lg:block">
           <ul className="flex">
+          <li className="text-gray-400 mr-5">Sort by</li>
             <li className="mr-5">Location</li>
             <li className="mr-5">Role</li>
             <li className="mr-5">Department</li>

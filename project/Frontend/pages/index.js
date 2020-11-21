@@ -8,8 +8,8 @@ const mainComponent = () => {
   return (
     <div className="bg-gray-100 h-full w-full">
       {header()}
-      <div className="flex mt-3 px-3">
-        <div className="w-1/4">
+      <div className="flex lg:mt-3 lg:px-3">
+        <div className="w-1/4 lg:block hidden">
           <FilterComponent
             title={Constants.FILTER_TITLE.JOB_TYPE}
             filterRoute={Constants.WEB_SERVICE_ROUTES.JOB_TYPES}
@@ -28,7 +28,7 @@ const mainComponent = () => {
             filterRoute={Constants.WEB_SERVICE_ROUTES.EXPERIENCES}
           />
         </div>
-        <div className="w-3/4 box-border ml-3 p-4 border-4 border-solid bg-white appearance-none block py-3 px-4 leading-tight text-gray-700 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
+        <div className="lg:w-3/4 w-full box-border lg:ml-3 p-4 border-4 border-solid bg-white appearance-none block py-3 px-4 leading-tight text-gray-700 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
           <div>{jobComponent()}</div>
         </div>
       </div>
