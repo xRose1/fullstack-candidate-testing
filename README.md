@@ -1,34 +1,33 @@
 # fullstack-candidate-testing
 
-## Instructions
+## About Test Job
 
+Before the test job, I was not aware about the **Next.js** and **TailwindCSS**. I have go through these frameworks and I understand that the Next.js is used for server side rendering. In this job, I have configured the Next.js but as I am new to Next.js, I haven't used server side rendering for now, due to the time constraint. But surely, if I get chance, I can work on it without any issue. I have configured and implement **TailwindCSS** as well in this short time span. Although, I have implemented all the functionality and tried to complete all the designs but there can be some issues in design due to the time constraints.
 
-1. Clone this repo. Then clone the main branch and use the following naming convention for the new branch: **firstname-lastname-YYYY-MM-DD**. If your name is John Doe, and today's date is 2020-11-17, then the new branch should be called **john-doe-2020-11-17**.
-2. The repo has 2 folders. **/data** and **/screenshots**.
-3. In the **/data** folder you will find 2 .json files. This is the data you will use to build the React app. You have to build a simple REST API to consume the data in the React app.
-4. In the **/screenshots** folder you will find what you are required to build for this test. 
-5. We strongly recommend you use Next.js and TailwindCSS for this test, since these are the frameworks we are using to build our own apps, but if you're not familiar with them, then create-react-app or Bootstrap 4 or 5 are fine. 
+## Project Structure
 
+The project folder contains 2 sub folders i.e. **Backend** & **Frontend**. The Backend folder contains the code of the node server and the Frontend folder contains the code related to React application.
 
-## After you're done:
-1. Push you branch
-2. Deploy your branch to a public url. We recommend you use Vercel, Netlify or AWS S3, but you're free to use any other service as long as the url is publicly accessible. 
-3. Include a README with the installation instructions and with the publicly accessible url. 
-4. Don't forget to let us know you're done to review your test.
+## Backend
 
+This folder contains the code of the node server to serve the Rest APIs. For every filter and job related data, I have written RestAPI and pass only data that is required to display to simulate the production environment.
 
-## The fine print:
-- Please keep it simple. We don't like complicated setups.
-- Try to replicate the original designs as much as possible.
-- Functional components only. 
-- For interactions in the React app you're free to use reducers, individual component state or any other library, but again, please keep it simple.
-- Typescript use is OK but not required.
-- SCSS use is not required. It is OK to include compiled CSS files or CDN urls.
-- This test shouldn't take you more than 4-6 hours to complete.
-- After the invitation is sent, your acccess rights to this repo will last 48 hours.  
+## Run Backend Server
 
-## Important
+1. cd `project/Backend`
+2. run `npm install && npm run forever`
+3. Backend server will run on port 3008
 
-The screenshot files are for reference only. The React app you are required to build has to look like these screenshots, but we don't expect your views to be an exact clone of every single one of them. All the components in the screenshot were built in plain .jsx with Tailwind CSS, with almost no custom CSS and no additional design assets (images, svg, logos).
+## Frontend
 
-Good luck!
+This folder contains the code of the react application. It will fetch the data from the Backend using RestAPI and render the UI.
+
+## Run Frontend Server
+
+1. cd `project/Frontend`
+2. run `npm install && npm run forever`
+3. Frontend server will run on port 3007
+
+## Public URL
+
+http://164.52.201.96:3007/
