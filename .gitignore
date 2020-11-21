@@ -30,3 +30,9 @@ yarn-error.log*
 .env.production.local
 
 *.lock
+
+project/Backend/node_modules
+project/Backend/package-lock.json
+project/Frontend/node_modules
+project/Frontend/package-lock.json
+project/Frontend/.next
