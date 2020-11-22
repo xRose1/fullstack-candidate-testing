@@ -3,12 +3,12 @@ import './styles.css';
 
 const FilterItem = (props: any) => {
 
-  const {data} = props;
+  const { data } = props;
 
   return (
     <div>
-      <label className="filter-title">{data.key}</label>
-      <label className="filter-count">{data.doc_count}</label>
+      <label className="filter-title ml-2">{data.key}</label>
+      <label className="filter-count ml-2">{data.doc_count}</label>
     </div>
   );
 }

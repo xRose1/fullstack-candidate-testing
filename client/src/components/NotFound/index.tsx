@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
 const Home = () => (
-  <Jumbotron>    
+  <Jumbotron>
     <h1>
       Page Not Found :(
     </h1>

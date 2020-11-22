@@ -9,13 +9,13 @@ export enum RepositoriesTypes {
 }
 
 export interface Filter {
-  key: string
-  doc_count: string
+  key: string;
+  doc_count: string;
 }
 
 export interface RepositoriesState {
-  readonly filters: any
-  readonly jobs: any
-  readonly loading: boolean
-  readonly error: boolean
+  readonly filters: any;
+  readonly jobs: any;
+  readonly loading: boolean;
+  readonly error: boolean;
 }

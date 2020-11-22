@@ -4,19 +4,19 @@ import { Filter } from '../../store/modules/repositories/types';
 import './styles.css';
 
 const FilterPanel = (props: any) => {
-  const {data, title, onShowMore} = props;
+  const { data, title, onShowMore } = props;
 
   return (
     <div>
       <div className="border border-gray-50 bg-white mt-3 p-3">
-        <h6 className="filter-type-title">{title}</h6>
+        <h6 className="filter-type-title mt-1 mb-3 ml-2">{title}</h6>
         {
           data.slice(0, 10).map((item: Filter) => <FilterItem data={item} key={item.key} />)
         }
 
         {
           data.length > 10 && (
-            <span className="more" onClick={() => onShowMore({
+            <span className="more ml-2" onClick={() => onShowMore({
               title,
               filters: data
             })}>Show more</span>

@@ -5,10 +5,10 @@ import { RepositoriesState } from './modules/repositories/types';
 
 import rootReducer from './modules/rootReducer';
 import rootSaga from './modules/rootSaga';
-import logger from 'redux-logger'
+import logger from 'redux-logger';
 
 export interface ApplicationState {
-  repositories: RepositoriesState,
+  repositories: RepositoriesState;
 }
 
 const sagaMiddleware = createSagaMiddleware();
