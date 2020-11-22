@@ -1,0 +1,63 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+html,
+body {
+  /* @apply bg-white-242; */
+}
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+}
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+@layer base {
+  body {
+    @apply bg-white-242;
+  }
+}
+
+@layer utilities {
+  .text-blue-clipboard {
+    --tw-bg-opacity: 1;
+    color: rgba(30, 128, 240, var(--tw-bg-opacity));
+  }
+
+  .bg-blue-clipboard{
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 128, 240, var(--tw-bg-opacity));
+  }
+
+  .border-blue-clipboard{
+    --tw-bg-opacity: 1;
+    border-color: rgba(30, 128, 240, var(--tw-bg-opacity));
+  }
+
+  .bg-white-242	{
+    --tw-bg-opacity: 1;
+    background-color: rgba(242, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .border-white-242	{
+    --tw-bg-opacity: 1;
+    border-color: rgba(242, 242, 242, var(--tw-bg-opacity));
+  }
+}
