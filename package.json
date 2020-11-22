@@ -1,0 +1,29 @@
+{
+  "name": "fullstack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint 'pages/*.js' --fix"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@material-ui/core": "^4.11.0",
+    "next": "10.0.2",
+    "react": "17.0.1",
+    "react-avatar": "^3.9.7",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "postcss": "^8.1.9",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
