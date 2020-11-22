@@ -5,7 +5,7 @@
 Download the codebase:
 
 ```bash
-git clone --single-branch --branch kevin-blake-thomas-2020-11-20 https://github.com/ClipboardHealth/fullstack-candidate-testing.git
+git clone --single-branch --branch kevin-blake-thomas-2020-11-22 https://github.com/ClipboardHealth/fullstack-candidate-testing.git
 cd fullstack-candidate-testing
 ```
 
