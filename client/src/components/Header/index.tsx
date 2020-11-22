@@ -5,7 +5,7 @@ import './styles.css';
 import { Button } from 'react-bootstrap';
 import Avatar from 'react-avatar';
 
-const Header = () => {
+const Header = (): any => {
   return (
     <header className="Header">
       <Navbar bg="light" expand="lg">
@@ -19,13 +19,13 @@ const Header = () => {
             <Nav.Link className="menu-title">LOUNGE</Nav.Link>
             <Nav.Link className="menu-title">SALARY</Nav.Link>
             <Button variant="outline-primary" className="menu-job">CREATE JOB</Button>
-            <Avatar name={"Joe Owen"} className="menu-avatar" color="#bdbdbd" maxInitials={2} round={true} />
+            <Avatar name={'Joe Owen'} className="menu-avatar" color="#bdbdbd" maxInitials={2} round={true} />
             <Nav.Link className="menu-title">LOGOUT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     </header>
   );
-}
+};
 
 export default Header;

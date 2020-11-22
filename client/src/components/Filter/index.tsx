@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const FilterItem = (props: any) => {
+const FilterItem = (props: any): any => {
 
   const { data } = props;
 

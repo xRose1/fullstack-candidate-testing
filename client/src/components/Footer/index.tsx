@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles.css';
 
-const Footer = () => {
+const Footer = (): any => {
   return (
     <footer className="p-5">
       <div className="row footer-container">
         <div className="col-md-6">
           <h4 className="footer-title">About Us</h4>
-          <p className="footer-item">We are a team of nurses, doctors, technologies and executives dedicated to help nurses find jobs that they love</p>
+          <p className="footer-item">{'We are a team of nurses, doctors, technologies and executives dedicated to help nurses find jobs that they love'}</p>
           <p className="footer-item">All copyrights © reserved 2020 - Health Explore</p>
         </div>
         <div className="col-md-3">
@@ -26,6 +26,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

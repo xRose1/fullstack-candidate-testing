@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron } from 'react-bootstrap';
-const Home = () => (
+const Home = (): any => (
   <Jumbotron>
     <h1>
       Page Not Found :(

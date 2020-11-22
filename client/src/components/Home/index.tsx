@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import { Modal } from 'react-bootstrap';
 import { ApplicationState } from '../../store';
 import { FaSearch } from 'react-icons/fa';
@@ -12,23 +12,23 @@ import { Filter } from '../../store/modules/repositories/types';
 
 import './styles.css';
 
-const Home = () => {
+const Home = (): any => {
   const [content, setContent] = useState<any>(null);
   const dispatch = useDispatch();
-  const filters = useSelector((state: ApplicationState) => state.repositories.filters);
-  const jobs = useSelector((state: ApplicationState) => state.repositories.jobs);
-  const job_count = jobs.reduce((count: number, job: any) => count + job.total_jobs_in_hospital, 0);
+  const filters = useSelector((state: ApplicationState): any => state.repositories.filters);
+  const jobs = useSelector((state: ApplicationState): any => state.repositories.jobs);
+  const job_count = jobs.reduce((count: number, job: any): any => count + job.total_jobs_in_hospital, 0);
 
-  const fetchRepos = () => {
+  const fetchRepos = (): any => {
     dispatch(loadFilterRequest());
     dispatch(loadJobsRequest());
-  }
+  };
 
   useEffect(fetchRepos, []);
 
-  const onShowMore = (content: any) => {
-    setContent(content)
-  }
+  const onShowMore = (data: any): any => {
+    setContent(data);
+  };
 
   return (
     <>
@@ -42,7 +42,10 @@ const Home = () => {
         <div className="row">
           <div className="col-md-3 d-none d-sm-block">
             {
-              Object.keys(filters).map((key: string) => <FilterPanel key={key} data={filters[key]} title={key.replace('_', ' ').toUpperCase()} onShowMore={onShowMore} />)
+              Object.keys(filters).map(
+                (key: string): any =>
+                  <FilterPanel key={key} data={filters[key]} title={key.replace('_', ' ').toUpperCase()} onShowMore={onShowMore} />,
+              )
             }
           </div>
           <div className="col-md-9">
@@ -52,33 +55,33 @@ const Home = () => {
                 <span> job postings</span>
               </div>
               {
-                jobs.map((item: any) => <JobAgency data={item} key={item.name} />)
+                jobs.map((item: any): any => <JobAgency data={item} key={item.name} />)
               }
             </div>
           </div>
         </div>
       </div>
 
-      <Modal show={content != null} onHide={() => {
-        setContent(null)
+      <Modal show={content != null} onHide={(): any => {
+        setContent(null);
       }}
-        centered
+        centered={true}
         dialogClassName="modal-90w"
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton={true}>
           <Modal.Title>{content ? content.title : ''}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="row">
             {
               content &&
-              content.filters.map((item: Filter) => <div className="col-md-3" key={item.key}><FilterItem data={item} /></div>)
+              content.filters.map((item: Filter): any => <div className="col-md-3" key={item.key}><FilterItem data={item} /></div>)
             }
           </div>
         </Modal.Body>
       </Modal>
     </>
   );
-}
+};
 
 export default Home;
