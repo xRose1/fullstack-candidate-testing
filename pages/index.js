@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import NavBar from "./navbar";
-import FilterSection from "./filerSection";
-import Hospital from "./hospital";
+import NavBar from "../components/navbar";
+import FilterSection from "../components/filerSection";
+import Hospital from "../components/hospital";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Grid from "@material-ui/core/Grid";
@@ -10,7 +10,7 @@ import Dialog from "@material-ui/core/Dialog";
 import Card from "@material-ui/core/Card";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import Filter from "./filter";
+import Filter from "../components/filter";
 
 export default function Home() {
   const [jobs, setJobs] = useState([]);
