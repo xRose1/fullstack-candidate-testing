@@ -21,8 +21,8 @@ yarn dev
 
 ## See the Demo
 
-See a demo of the application [here](https://)
+See a demo of the application [here](https://kbt-clipboard-health.herokuapp.com/)
 
 ```bash
-https://
+https://kbt-clipboard-health.herokuapp.com/
 ```
