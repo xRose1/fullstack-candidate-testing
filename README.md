@@ -50,6 +50,7 @@ For filter, didn't make schema for it. Because it is needed other relationship w
 Used filter.json as a constant.
 
 ```terminal
+npm install -g mongoose-data-seed
 md-seed run -d
 ```
 
