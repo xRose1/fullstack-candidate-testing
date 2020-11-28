@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+To Run:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. npm install
+2. Visit http://localhost:3000
 
-## Available Scripts
 
-In the project directory, you can run:
+Instructions
 
-### `npm start`
+    Clone this repo. Then clone the main branch and use the following naming convention for the new branch: firstname-lastname-YYYY-MM-DD. If your name is John Doe, and today's date is 2020-11-17, then the new branch should be called john-doe-2020-11-17.
+    The repo has 2 folders. /data and /screenshots.
+    In the /data folder you will find 2 .json files. This is the data you will use to build the React app. You have to build a simple REST API to consume the data in the React app.
+    In the /screenshots folder you will find what you are required to build for this test.
+    We strongly recommend you use Next.js and TailwindCSS for this test, since these are the frameworks we are using to build our own apps, but if you're not familiar with them, then create-react-app or Bootstrap 4 or 5 are fine.
+    The search input on top of the page should work. The search index should be built using the /data/jobs.json file.
+    Sort by options on top of the page should sort in 3 states per each filter: ascending, descending or remove the sorting operation.
+    Sort by options should work simultaneously with other sort by options and with the search input if the user is searching for something. This means that the user could sort for example by Location:asc, Department:asc while searching for a Nurse in California.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After you're done:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    Push you branch
+    Deploy your branch to a public url. We recommend you use Vercel, Netlify or AWS S3, but you're free to use any other service as long as the url is publicly accessible.
+    Include a README with the installation instructions and with the publicly accessible url.
+    Don't forget to let us know you're done to review your test.
 
-### `npm test`
+The fine print:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Please keep it simple. We don't like complicated setups.
+    Try to replicate the original designs as much as possible.
+    Functional components only.
+    For interactions in the React app you're free to use reducers, individual component state or any other library, but again, please keep it simple.
+    Typescript use is OK but not required.
+    SCSS use is not required. It is OK to include compiled CSS files or CDN urls.
+    This test shouldn't take you more than 4-6 hours to complete.
+    After the invitation is sent, your acccess rights to this repo will last 48 hours.
 
-### `npm run build`
+Important
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The screenshot files are for reference only. The React app you are required to build has to look like these screenshots, but we don't expect your views to be an exact clone of every single one of them. All the components in the screenshot were built in plain .jsx with Tailwind CSS, with almost no custom CSS and no additional design assets (images, svg, logos).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Good luck!
